@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a {
+    text-decoration: none; 
+}
+
+.container_embrulho {
+    width: 580px;
+    /* background-color: aqua;  */
+    margin: 0 auto;
+}
+/* Comeco estilo do cabecalho */
+#cabecalho_main {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    justify-content: space-around;
+}
+
+#foto_perfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #5b1a97;
+    font-weight: 700;
+}
+
+.link {
+    width: 100%;
+}
+
+.link>a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    background-color: #8b398b;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.link>a:hover {
+    background-color:#5b1a97;
+}
+
+#rodape_simbolos {
+    display: flex;
+    justify-content: center;
+}
+
+.simbolo {
+    font-size: 40px;
+    color:#5b1a97;
+    margin: 40px 40px;
+}
+
+.simbolo:hover {
+    opacity: 0.5;
+}
+
+

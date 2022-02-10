@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nunito:wght@600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none; /*linha em baixo*/
+    color: inherit; /*herdar cor*/
+}
+
+/* Coisas reutilizaveis (Wrapper + Flex) */
+
+.wrapper{ /*resposividade, definimos um tamanho máximo de largura para a página, depois ajustamos para que ele preencha 90% da tela, isso faz com que a pagina se ajuste a telas diferentes.*/
+    max-width: 1440px; /*Largura máxima*/
+    width: 90%; 
+    margin: 0 auto; /*Centraliza, pois a margem da direita e da esquerda ficam iguais*/
+}
+.flex{
+    display: flex;  /*habilitar o display flex flexível*/
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 20px;
+    color: #EA0F78;
+    background-color: #fff;
+    padding: 10px 22px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content; /*se adapta ao conteudo que esta dentro dele*/
+}
+.btn:hover{
+    opacity: 0.9;
+}
+#secao_inicial{
+    background: linear-gradient(90deg, #D83482 0%, #EC0A76 100%);
+    padding: 32px 0;
+    color: #fff;
+}
+#logo{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+#links_secoes{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 16px;
+}
+#links_secoes > a{
+    padding: 10px 20px;
+}
+#links_secoes > a:hover{
+    text-decoration: underline;
+}
+.btn_menu{
+    font-size: 16px;
+}
+/* banner */
+.conteudo_inicial{
+    margin-top: 54px;   
+}
+.conteudo_esq{
+    width: 40%;
+}
+.conteudo_esq > h1{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 800; /*peso da fonte*/
+    font-size: 56px;
+    line-height: 58px;
+}
+.conteudo_esq > p{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 16px;
+    margin: 10px 0 32px;
+}
+/*secao artigos*/
+.secao_artigos{
+    background-color: #f3f5f7;
+    padding: 64px 0;
+}
+.secao_artigos > h2{
+    text-align: center;
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #313131;
+    margin-bottom: 32px;
+}
+.artigos_principais{
+    width: 65%;
+}
+.artigos_principais > h3, .artigos_destaque > h3{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #313131;
+}
+.artigos_principais > p{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 18px;
+    color: #b6b6b6;
+    line-height: 26px;
+    margin: 10px 0 32px ;
+}
+.cards{
+    /* background-color: rgb(218, 22, 22); */
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff; 
+    width: 48%;
+    min-height: 310px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+}
+.cabecalho_card{
+    margin-bottom: 20px;
+}
+.cabecalho_card > p{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 16px;
+    color: #b6b6b6;
+}
+.conteudo_card > h4, .card_destaque > h4{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #ea2181;
+    margin-bottom: 5px;
+}
+.conteudo_card > p, .textos_finais > p{
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 18px;
+    color: #b6b6b6;
+    line-height: 26px;
+}
+.artigos_destaque {
+    width: 33%;
+}
+.cards_destaque {
+    margin-top: 20px;
+}
+.card_destaque {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+}
+.secao_artigos > div {
+    align-items: flex-start;
+}
+.cabecalho_card > i{
+    font-size: 25px;
+    color: #ea2181;
+}
+.cabecalho_card > i:hover::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f004";
+    font-weight: 600;
+    cursor: pointer; 
+}
+/* Secao final */
+.secao_final{
+    background-color: #ECEEF0;
+    padding: 64px 0;
+}
+.textos_finais{
+    width: 40%;
+}
+.textos_finais > h2{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #313131;
+}
+.btn_secundario{
+    background-color: #ea2181;
+    color: #fff;
+    margin: 32px auto 0;
+}
+/* rodape */
+footer {
+    text-align: center;
+    background-color: #ffffff;
+    font-family: 'Lexend Deca' , sans-serif;
+    font-size: 18px;
+    padding: 6px 0;
+    color: #ea2181;
+}
+
